@@ -1,39 +1,49 @@
-<div align="center"> <img src="https://your-image-url-here.png" alt="ChatApp Logo" width="200"> <p>A modern, real-time chat platform built with the FARM stack</p>
-[![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge(https://img.shields.io/badge/React-20232A?style=for-the-badge&ongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongocker](https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=whitroject Demo
+Real Time Chat Application (FARM Stack)
+<div align="center"> <img src="https://your-logo-url-here.png" alt="Chat Application Logo" width="150"> <p>A modern, real-time chat platform built with the FARM stack</p>
+[![FastAPI](https://img.shields.io/badge/FastAPI-005571?stylct](https://img.shields.io/badge/React-20232A?style=for-the-badgeongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=whg.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=whiteatures
 
-<div align="center"> <table> <tr> <td align="center"><strong>Welcome</strong></td> <td align="center"><strong>Signup</strong></td> <td align="center"><strong>Login</strong></td> </tr> <tr> <td><img src="link-to-welcome-image" width="200"/></td> <td><img src="link-to-signup-image" width="200"/></td> <td><img src="link-to-login-image" width="200"/></td> </tr> <tr> <td align="center"><strong>API Docs</strong></td> <td align="center"><strong>Private Chat</strong></td> <td align="center"><strong>Group Chat</strong></td> </tr> <tr> <td><img src="link-to-api-docs-image" width="200"/></td> <td><img src="link-to-private-chat-image" width="200"/></td> <td><img src="link-to-group-chat-image" width="200"/></td> </tr> </table> </div>
-✨ Features
-<table> <tr> <td> <h3>📡 Real-time Communication</h3> <ul> <li>WebSocket integration for instant messaging</li> <li>Private and group chat functionality</li> <li>Message delivery status indicators</li> </ul> </td> <td> <h3>🔐 Secure Authentication</h3> <ul> <li>JWT-based authentication system</li> <li>Email verification process</li> <li>Password encryption with Passlib</li> </ul> </td> </tr> <tr> <td> <h3>🛡️ Robust Validation</h3> <ul> <li>Client-side form validation</li> <li>Server-side data validation with Pydantic</li> <li>Input sanitization for security</li> </ul> </td> <td> <h3>🐳 Containerized Setup</h3> <ul> <li>Docker configuration for backend</li> <li>Docker configuration for frontend</li> <li>Easy deployment with docker-compose</li> </ul> </td> </tr> </table>
-🔧 Technology Stack
+Real-time Communication: WebSocket integration for instant messaging
+
+JWT Authentication: Secure user access and data protection
+
+Email Verification: Required verification for account activation
+
+Comprehensive Validation: Both client-side and server-side validation
+
+Private & Group Chats: Separate collections for different chat types
+
+Containerized Setup: Docker configurations for easy deployment
+
+🛠️ Tech Stack
 Frontend
-React: A powerful JavaScript library for building user interfaces
+React: User interface library
 
-Vite: Modern development environment that optimizes frontend development
+Vite: Frontend build tool
 
-Axios: Promise-based HTTP client for API requests
+Axios: HTTP client for API requests
 
-Framer Motion: Animation library for React
+Framer Motion: Animation library
 
-React Router: Declarative routing for React applications
+React Router: Application routing
 
-Websocket Client: For real-time communication
+Websocket Client: Real-time communication
 
-Tailwind CSS: Utility-first CSS framework
+Tailwind CSS: Styling framework
 
 Backend
-FastAPI: Modern Python framework for efficient API development
+FastAPI: Python web framework
 
-Pydantic: Data validation and settings management
+Pydantic: Data validation
 
-Motor & PyMongo: MongoDB async driver and tools
+Motor & PyMongo: MongoDB interaction
 
-WebSockets: Real-time chat implementation
+WebSockets: Real-time functionality
 
-Cryptography & Passlib: Security for user data
+Cryptography & Passlib: Security tools
 
-Celery: Asynchronous task processing (email verification)
+Celery: Async task processing
 
-Uvicorn: ASGI server for FastAPI
+Uvicorn: ASGI server
 
 🚀 Getting Started
 Prerequisites
@@ -43,71 +53,89 @@ Python 3.7+ and pip
 
 MongoDB server
 
-Redis (for Celery tasks)
+Redis server (for Celery)
 
-Quick Setup
+Installation
 Clone Repository
-
 bash
 git clone https://github.com/rhsajib/real-time-chat-app.git
 cd real-time-chat-app
 Backend Setup
-
 bash
+# Navigate to backend directory
 cd chatp-root/backend/app
-# Configure environment variables according to .env.demo
+
+# Configure environment variables (see .env.demo file)
+# Then return to backend root
 cd ..
+
+# Install dependencies
 pip install -r requirements.txt
+
+# Start FastAPI server
 uvicorn app.main:app --reload
-Your FastAPI server should now be running on http://localhost:8000
-
 Frontend Setup
-
 bash
+# Navigate to frontend directory
 cd chatp-root/frontend
-# Configure environment variables according to .env.demo
+
+# Configure environment variables (see .env.demo file)
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
-Your React development server should now be running on http://localhost:8080
-
 Celery Setup
-
 bash
 cd chatp-root/backend
 celery -A app.services.worker.celery.celery worker --loglevel=info
-🐳 Docker Setup
-For a containerized environment:
-
+Docker Setup
 bash
+# Navigate to root directory
 cd chatp-root
+
 # Configure environment variables first
+# Then build and start containers
 docker-compose up --build
 The backend will be accessible at http://localhost:8000 and the frontend at http://localhost:8080.
 
-📝 Usage Instructions
-First-time Setup:
+📝 Usage
+Initial Setup:
 
 Create multiple user accounts with unique email addresses
 
-Verify email addresses to activate accounts
+Verify your email to activate your account
 
-Starting Conversations:
+Chat Functionality:
 
-After creating accounts, you can find other users in the sidebar
+Find users in the sidebar
 
-Start private conversations or create group chats
+Start private conversations
 
-Experience real-time messaging with instant delivery
+Create or join group chats
 
-Exploring Features:
+Experience real-time messaging
 
-Try out the real-time chat functionality
+🧪 API Documentation
+FastAPI provides automatic interactive API documentation. Once the server is running, visit:
 
-Test the authentication system
+Swagger UI: http://localhost:8000/docs
 
-Explore private and group messaging capabilities
+ReDoc: http://localhost:8000/redoc
 
-📜 License
+🤝 Contributing
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+Fork the repository
+
+Create your feature branch (git checkout -b feature/amazing-feature)
+
+Commit your changes (git commit -m 'Add some amazing feature')
+
+Push to the branch (git push origin feature/amazing-feature)
+
+Open a Pull Request
+
+📄 License
 This project is licensed under the MIT License - see the LICENSE.md file for details.
-
-<div align="center">

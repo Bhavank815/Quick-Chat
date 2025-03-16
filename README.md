@@ -61,12 +61,13 @@ Before you begin, ensure you have the following installed:
 - **MongoDB** server running locally or using a cloud-based service.
 - **Redis** for Celery task queue.
 
-### Explore ChatP
+### Explore 
 
 1. **Clone or Download Repository**
    ```bash
    git clone https://github.com/rhsajib/real-time-chat-app.git
    cd real-time-chat-app
+
 Backend Setup
 Environment Variable Setup:
 
@@ -143,4 +144,6 @@ Engaging in Conversations
 Once multiple users are registered, you can engage in real-time chat. The Users section from the sidebar will display all available users, and you can initiate chats with them.
 
 License
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+

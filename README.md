@@ -1,21 +1,12 @@
 # Real Time Chat Application (FARM Stack Project)
 
-This FARM (FastAPI, React, and MongoDB) project is a full-stack web application that combines the power of **FastAPI** for the backend, **React** for the frontend, and **MongoDB** for data storage. It features JWT authentication, email verification, real-time chat using **WebSockets**, and more.
+This (FastAPI, React, and MongoDB) project is a full-stack web application that combines the power of **FastAPI** for the backend, **React** for the frontend, and **MongoDB** for data storage. It features JWT authentication, email verification, real-time chat using **WebSockets**, and more.
 
 ## Table of Contents
 - [Features](#features)
 - [Frontend](#frontend)
 - [Backend](#backend)
 - [Getting Started](#getting-started)
-  - [Prerequisites](#prerequisites)
-  - [Clone or Download Repository](#explore-chatp)
-  - [Backend Setup](#backend-setup)
-  - [Frontend Setup](#frontend-setup)
-  - [Celery Setup](#celery-setup)
-  - [Redis & Database Configuration](#redis-configuration)
-  - [Docker Setup](#docker-setup)
-- [Usage Instructions](#usage-instructions)
-- [License](#license)
 
 ## Features
 
